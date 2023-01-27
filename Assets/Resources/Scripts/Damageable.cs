@@ -9,7 +9,7 @@ public class DamageSource
 }
 
 // This Component handles the health of a living Entity.
-// Optionally a Slider that controlls a UI health bar can be assigned.
+// Optionally a Slider that controls a UI health bar can be assigned.
 // The player health bar consists of a 9-sliced sprite for the border and a solid color UI Image for the filling level.
 // Setting up a sprite from an Image: https://docs.unity3d.com/Manual/Sprites.html
 // 9-slicing a sprite: https://docs.unity3d.com/Manual/9SliceSprites.html

@@ -397,7 +397,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.3111954, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 4
   SprintSpeed: 6
-  RotationSpeed: 0.5
+  RotationSpeed: 0.3
   SpeedChangeRate: 1000
   JumpHeight: 0.6
   Gravity: -15
@@ -546,17 +546,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8880d948b9bfc3489f628f9134cfb9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 11400000, guid: f8f9410a193f4fb45b45c80adf98eec9, type: 2}
   fadeOutRect: {fileID: 0}
-  footstepSfx: {fileID: 8300000, guid: 67027d994199e914d9e3a328fcc21713, type: 3}
   jumpSfx: {fileID: 8300000, guid: f8af612dd5257b041bcb7f8706358700, type: 3}
   landSfx: {fileID: 8300000, guid: 35af6543dbd870c4d8c34545004e7a16, type: 3}
-  deathSfx: {fileID: 8300000, guid: a828d2693a6808b49944b3e12691dbcb, type: 3}
   hitSfx:
   - {fileID: 8300000, guid: 8777357d184eb534ba049411ff83760a, type: 3}
   - {fileID: 8300000, guid: a48fbd03b37d8194aa9f0b5c27b6d878, type: 3}
   - {fileID: 8300000, guid: 1f406a75e348a624f9095eedf66f2e71, type: 3}
   - {fileID: 8300000, guid: 9bb19dcfde1abc14c9a73781d95a1007, type: 3}
+  deathSfx: {fileID: 8300000, guid: a828d2693a6808b49944b3e12691dbcb, type: 3}
+  footstepSfx: {fileID: 8300000, guid: 67027d994199e914d9e3a328fcc21713, type: 3}
   footstepSfxPeriodWalking: 0.5
   footstepSfxPeriodRunning: 0.4
 --- !u!114 &5757743322470320421

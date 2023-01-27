@@ -47,7 +47,7 @@ public class Pickup : MonoBehaviour
     // Called when the collider of this GameObject collides with another collider.
     void OnTriggerEnter(Collider other)
     {
-        if (isTriggered || other.gameObject.tag != "Player")
+        if (isTriggered || !other.gameObject.CompareTag("Player"))
             return;
         isTriggered = true;
 

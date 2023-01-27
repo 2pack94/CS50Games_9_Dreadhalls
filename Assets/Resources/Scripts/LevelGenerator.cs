@@ -107,9 +107,8 @@ public class LevelGenerator : MonoBehaviour
     // Set the GameObject Position to the tile (top surface).
     void TeleportEntityToTile(GameObject entity, MazeTile tile)
     {
-        // Set the GameObject to inactive during the teleport. There is an issue that the player does not teleport
-        // to the position, but gets stuck inside the wall on the edge of the maze sometimes.
-        // This is probably because of its collider.
+        // Set the GameObject to inactive during the teleport. This is needed because of the CharacterController Component
+        // of the player. It will otherwise collide and get stuck at the wall when changing it position.
         bool wasActive = entity.activeSelf;
         if (wasActive)
             entity.SetActive(false);

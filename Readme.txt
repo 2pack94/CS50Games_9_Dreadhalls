@@ -10,7 +10,8 @@ A more advanced implementation of a FPS character controller with more features
 https://assetstore.unity.com/packages/templates/fps-microgame-156015
 
 Dependencies:
-Starter Assets - First Person Character Controller (Version 1.0) by Unity Technologies: https://assetstore.unity.com/packages/essentials/starter-assets-first-person-character-controller-196525
+Starter Assets - First Person Character Controller (Version 1.1.1) by Unity Technologies:
+https://assetstore.unity.com/packages/essentials/starter-assets-first-person-character-controller-196525
 LowPoly Dungeon Modules (Version 1.0) by Magicpot Inc.: https://assetstore.unity.com/packages/3d/environments/dungeons/lowpoly-dungeon-modules-108997
 Monster Orc (Version 1.0) by VK GameDev: https://assetstore.unity.com/packages/3d/characters/humanoids/monster-orc-146616
 Experimental Unity Packages:
@@ -62,6 +63,7 @@ Unity will apply only 1 of the 3 optimizations in this order: static batching, G
 Occlusion culling: https://docs.unity3d.com/Manual/OcclusionCulling.html
 Prevents Unity from performing rendering calculations for GameObjects that are completely occluded by other GameObjects.
 Applies to GameObjects marked as "Occluder Static" or "Occludee Static".
-Occlusion culling data for a scene must be baked inside of the Unity Editor. It will then load the baked data into memory at runtime.
+Occlusion culling data for a scene must be baked inside of the Unity Editor.
+It will then load the baked data into memory at runtime.
 Next to occlusion culling, frustum culling is always used. It excludes GameObjects from rendering that do not fall within
 the Camera’s view frustum: https://docs.unity3d.com/Manual/UnderstandingFrustum.html

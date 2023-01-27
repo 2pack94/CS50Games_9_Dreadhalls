@@ -19,7 +19,8 @@ public class Actor : MonoBehaviour
         }
     }
 
-    // Call this function every frame to spherically interpolate transform.rotation, so the GameObject looks towards a target point.
+    // Call this function every frame to spherically interpolate transform.rotation, so the GameObject looks towards
+    // a target point.
     public static void OrientTowards(Vector3 targetPosition, Transform transform)
     {
         // Specifies the rate at which transform.rotation changes every frame.

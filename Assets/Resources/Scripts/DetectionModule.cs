@@ -79,7 +79,7 @@ public class DetectionModule : MonoBehaviour
                 // Return a hit for all colliders intersecting the ray.
                 RaycastHit[] hits = Physics.RaycastAll(detectionSourcePoint.position,
                     raycastNormal, visionDetectionRadius, -1, QueryTriggerInteraction.Ignore);
-                // Find the clostest valid hit.
+                // Find the closest valid hit.
                 RaycastHit closestValidHit = new();
                 closestValidHit.distance = Mathf.Infinity;
                 bool foundValidHit = false;
@@ -96,7 +96,7 @@ public class DetectionModule : MonoBehaviour
                 if (!foundValidHit)
                     continue;
 
-                // Check if the clostest valid hit was a Detectable or an obstruction.
+                // Check if the closest valid hit was a Detectable or an obstruction.
                 Detectable hitDetectable = closestValidHit.collider.GetComponentInParent<Detectable>();
                 if (hitDetectable == detectable)
                 {
